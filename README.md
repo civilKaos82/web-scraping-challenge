@@ -37,16 +37,20 @@ Open IRB and ensure that we can use Nokogiri to extract data from HTML.  A short
 
 
 ### Release 1:  Recommend Meals Containing a Specific Food
-Build an application that saves diners at the restaurant [Cafeteria][] the trouble of reading through the menu.  Users will run our application and pass in a food they want to eat.  Our application will scrape the restaurant's website and present the user with meals containing that food as either the entree or a side dish.  We can see an example implementation in Figure 2.
+Build an application that saves diners at the restaurant [Cafeteria][] the trouble of reading through the menu.  Users will run our application and pass in a food they want to eat.  Our application will scrape the restaurant's website and present the user with meals containing that food as either the entree or a side dish.  
+
+In building the application, we'll want to make appropriate object-oriented design decisions.  What classes do we need to model the data from the website's menu?  What state should each class have?  What behaviors does each class need?  
+
+We can see an example implementation in Figure 2.
 
 ![example implementation animation](readme-assets/web-scraping-animation.gif)  
 *Figure 2*.  Recommending meals that contain specific foods.
 
+*Note:* While developing our application, rather than attempting to parse the live website, use the file `html-samples/cafeteria.html`.  The markup is the same as that of the live website—only it has different menu items.  This will prevent us along with our cohort from hammering the website server with requests.  We'll switch to parsing a live website in the next release once our application is working.
 
-In building the application, we'll want to make appropriate object-oriented design decisions.  What objects do we need to model the data from the website's menu?  What state should each object have?  What behaviors does each object need?  
+### Release 2: Try It On A Live Site
 
-*Note:* While developing our application, rather than attempting to parse the live website, use the file `html-samples/cafeteria.html`.  The markup is the same as that of the live website—only it has different menu items.  This will prevent us along with our cohort from hammering the website server with requests.  When our application is working, then switch to parsing the live website.
-
+Now that we have code working against our `html-samples/cafeteria.html` example, let's try running it against a real site. Use your scraper to pull the menu from `https://devbootcamp.github.io/cafeteria/`. Nokogiri has some information on scraping a website in their tutorial.
 
 ## Conclusion
 Be empowered:  the entire internet is now our data input.  When data is encoded in HTML, we can now extract that data and use it in our own applications.  However, there are ethical considerations to web scraping—just because we can, doesn't mean that we always should.
