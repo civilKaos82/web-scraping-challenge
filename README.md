@@ -50,7 +50,7 @@ We can see an example implementation in Figure 2.
 
 ### Release 2: Try It On A Live Site
 
-Now that we have code working against our `html-samples/cafeteria.html` example, let's try running it against a real site. Use your scraper to pull the menu from `https://devbootcamp.github.io/cafeteria/`. Nokogiri has some information on scraping a website in their tutorial.
+Now that we have code working against our `html-samples/cafeteria.html` example, let's try running it against a real site. Use your scraper to pull the menu from `https://devbootcamp-curriculum.github.io/cafeteria/`. Nokogiri has some information on scraping a website in their tutorial.
 
 ## Conclusion
 Be empowered:  the entire internet is now our data input.  When data is encoded in HTML, we can now extract that data and use it in our own applications.  However, there are ethical considerations to web scraping—just because we can, doesn't mean that we always should.
@@ -59,7 +59,7 @@ Be empowered:  the entire internet is now our data input.  When data is encoded 
 
 
 [BBR Guide]: http://ruby.bastardsbook.com/chapters/html-parsing/
-[cafeteria]: https://devbootcamp.github.io/cafeteria/
+[cafeteria]: https://devbootcamp-curriculum.github.io/cafeteria/
 [CSS selectors]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors
 [Nokogiri]: http://www.nokogiri.org/
 [Nokogiri installation]: http://www.nokogiri.org/tutorials/installing_nokogiri.html
